@@ -1,0 +1,28 @@
+body {
+    background-image: url(img/backgroud.jpg);
+    font-family: Helvetica, sans-serif;
+    text-align: center;    
+}
+#photo {
+    border-radius: 50%;
+}
+h1 {
+    color: rgb(255, 255, 255);
+}
+h2 {
+    color: rgb(255, 255, 255);
+}
+h3 {
+    color: rgb(255, 255, 255);
+}
+.list {
+    color: white; 
+    text-align: left ;
+}
+p {
+    color: rgb(255, 255, 255);
+}
+
+
+
+
