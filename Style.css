@@ -1,55 +1,43 @@
-body {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: rgb(255, 255, 255);
-    /* border: 30px solid gray; */
-    margin: auto;
-    width: 70%;
-}
 .header {
-    position: relative;
+    /* border: 2px solid green; */
+    height: 300px;
     box-sizing: border-box;
-
-
 }
 #photo {
+    width: 280px;
+    float: left;
+    padding: 10px;
     border-radius: 50%;
-    display: inline;
-    padding: 2%;
-    width: 200px;
+    background-color: gray;
 }
-.name {
-    position: relative;
-    top: -200px;
-    left: 20%;
-    right: 5%;
-    text-align:left;
-    
-   
+.descrition {
+    position: absolute;
+    top: 80px;
+    left: 350px;
+    right: 100px;
 }
 .nav li {
-    display: inline;
+    display: inline-block;
     background-color: gray;
-    padding: 10px 15px;
-
+    padding: 10px;
 }
 .nav {
-    position: relative;
-    top: -200px;
-    left: 225px;
-}
-
-.section h3 {
-    text-align: center;
-    font-size: 30px;
-}
-.section li {
-    margin: 20px;
-    margin-top: 0px;
+    position: absolute;
+    left: -40px;
 }
 .section {
+    text-align: center;
+    /* border: 2px solid green; */
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-color: gray;
-    padding-top: 8%;
-    padding-bottom: 8%;
-}.section h3 {
-    padding-bottom: 8%;
+    color: rgb(255, 255, 255);
+}
+.section h3 {
+    font-size: 30px;
+    
+}
+.section li {
+    list-style: none;
+    padding: 20px;
 }
