@@ -1,5 +1,7 @@
 body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 70%;
+    margin: auto;
 }
 .header {
     /* border: 2px solid green; */
@@ -16,8 +18,8 @@ body {
 .descrition {
     position: absolute;
     top: 80px;
-    left: 350px;
-    right: 100px;
+    left: 650px;
+    right: 300px;
 }
 .nav li {
     display: inline-block;
