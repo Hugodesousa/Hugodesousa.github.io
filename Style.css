@@ -1,3 +1,6 @@
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 .header {
     /* border: 2px solid green; */
     height: 300px;
@@ -33,11 +36,16 @@
     background-color: gray;
     color: rgb(255, 255, 255);
 }
-.section h3 {
+.section h3, .section2 h3 {
     font-size: 30px;
     
 }
-.section li {
+.section li, .section2 li {
     list-style: none;
     padding: 20px;
+}
+.section2 {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
