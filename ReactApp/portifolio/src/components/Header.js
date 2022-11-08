@@ -27,7 +27,7 @@ export default function Header() {
         <NavItem>
             <h4
             className='headerItem'
-              onClick={() => setPage('Sobre')}
+              onClick={() => setPage('sobre')}
             >
               Sobre
             </h4>
