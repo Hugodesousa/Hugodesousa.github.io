@@ -1,4 +1,15 @@
 .photo {
- width: 600px;
  height: 100vh;
+ width: 500px;
+
 }
+
+.contFix {
+
+  display: flex;
+  justify-content: center;
+}
+
+.Container {
+    padding: 0;
+} 

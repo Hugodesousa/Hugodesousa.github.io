@@ -1,11 +1,18 @@
 import React from 'react'
+import { Nav, NavItem } from 'reactstrap'
 
 export default function Contacts() {
   return (
-    <div>
-      <h3>GitHub</h3>
-      <h3>Linkdin</h3>
-      <h3>Gmail</h3>
-    </div>
+    <Nav className='header'>
+      <NavItem className='headerItem'>
+        <h4>GitHub</h4>
+      </NavItem>
+      <NavItem className='headerItem'>
+        <h4>Linkdin</h4>
+      </NavItem>
+      <NavItem className='headerItem'>
+        <h4>Gmail</h4>
+      </NavItem>
+    </Nav>
   )
 }
