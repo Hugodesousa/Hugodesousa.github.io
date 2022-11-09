@@ -13,11 +13,11 @@ export default function Home() {
         <Row>
           <Header />
           <Col>
-            <Image />
+            {/* <Image /> */}
           </Col>
           <Col>
-            <GenericContainer />
             <Row>
+            <GenericContainer />
               <Col>
                 <Contacts />
               </Col>

@@ -1,0 +1,20 @@
+.imageContainer {
+/* position: absolute;
+width: 667px;
+height: 768px; */
+
+/* background: url(20210528_184351.jpg); */
+}
+.photo {
+position: relative;
+width: 800px;
+height: 100vh;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+
+/* background: url('../img/photomain.jpg'); */
+}

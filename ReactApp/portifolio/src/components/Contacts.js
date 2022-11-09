@@ -7,24 +7,24 @@ export default function Contacts() {
     <Nav className='header'>
       <NavItem className='headerItem'>
         <NavLink href='https://github.com/Hugodesousa' target='_blank'>
-          <h4>GitHub</h4>
+          <h5>GitHub</h5>
         </NavLink>
       </NavItem>
       <NavItem className='headerItem'>
         <NavLink
           href='https://www.linkedin.com/in/hugo-de-sousa-dev'
           target='_blank'>
-          <h4>Linkdin</h4>
+          <h5>Linkdin</h5>
         </NavLink>
       </NavItem>
       <NavItem className='headerItem'>
-        <NavLink 
-        onClick={ () => {
-          copy('hugodesousa.16@gmail.com')
+        <NavLink
+          onClick={() => {
+            copy('hugodesousa.16@gmail.com')
             alert('Email copiado para área de transferência')
-        } }
-        >           
-            <h4>Gmail</h4>
+          }}
+        >
+          <h5>Gmail</h5>
         </NavLink>
       </NavItem>
     </Nav>
