@@ -13,7 +13,7 @@ export default function Home() {
         <Row>
           <Header />
           <Col>
-            {/* <Image /> */}
+            <Image />
           </Col>
           <Col>
             <Row>
