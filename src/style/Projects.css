@@ -9,7 +9,6 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-
 }
 
 .buttonNext {
@@ -17,8 +16,11 @@
   margin: 10px 20px;
 }
 
-@media screen and ( max-width : 780px ) {
+/* .btn {
+  border-radius: 50%;
+}  */
 
+@media screen and ( max-width : 780px ) {
   .content {
     max-width: 24rem;
     height: auto;

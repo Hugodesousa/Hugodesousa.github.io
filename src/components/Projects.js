@@ -14,11 +14,11 @@ export default function Projects() {
 
   const controlerProjectSelected = (parn) => {
     if (parn === 'mais') {
-      selectedProject < myProjects.length - 1 
+      return selectedProject < myProjects.length - 1 
         ? setSelectedProject(selectedProject + 1) 
         : setSelectedProject(0) ;
     }
-    selectedProject > 0 
+    return selectedProject > 0 
       ? setSelectedProject(selectedProject - 1) 
       : setSelectedProject(myProjects.length - 1) ;
   };
