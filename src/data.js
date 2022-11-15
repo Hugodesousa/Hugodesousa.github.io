@@ -1,24 +1,31 @@
 import projectSolarSystem from './images/solarsystem.gif'
-import projectTrybewarts from './images/trybewarts.gif'
+import projectTrybewarts from './images/trybewarts.png'
+import tunes from './images/tunes.gif'
+import wallet from './images/wallet.gif'
+import trivia from './images/trivia.gif';
+import pixelArt from './images/pixel-art.gif';
+import shopping from './images/shoppingCart.gif';
+import stars from './images/starwars.png'
+
 
 const myProjects = [
   {
     title: "Trybe-tunes",
     link: "https://hugodesousa.github.io/trybe-tunes/",
     description: "norem ipsum eget nostra arcu pretium senectus vel donec sed consequat luctus, arcu velit ut ante ultricies gravida adipiscing dictum donec fames erat ",
-    image: projectTrybewarts,
+    image: tunes,
   },
   {
     title: "Wallet",
     link: "https://hugodesousa.github.io/trybe-wallet/",
     description: "norem ipsum eget nostra arcu pretium senectus vel donec sed consequat luctus, arcu velit ut ante ultricies gravida adipiscing dictum donec fames erat ",
-    image: projectTrybewarts,
+    image: wallet,
   },
   {
     title: "Trivia",
     link: "https://hugodesousa.github.io/trivia-game/",
     description: "norem ipsum eget nostra arcu pretium senectus vel donec sed consequat luctus, arcu velit ut ante ultricies gravida adipiscing dictum donec fames erat ",
-    image: projectTrybewarts,
+    image: trivia,
   },
   {
     title: "Projeto Solar System",
@@ -36,19 +43,19 @@ const myProjects = [
     title: "Arte com pixel",
     link: "https://hugodesousa.github.io/Arte-com-Pixels/",
     description: "norem ipsum eget nostra arcu pretium senectus vel donec sed consequat luctus, arcu velit ut ante ultricies gravida adipiscing dictum donec fames erat ",
-    image: projectTrybewarts,
+    image: pixelArt,
   },
   {
     title: "Carrinho de compras",
     link: "https://hugodesousa.github.io/shopping-cart/",
     description: "norem ipsum eget nostra arcu pretium senectus vel donec sed consequat luctus, arcu velit ut ante ultricies gravida adipiscing dictum donec fames erat ",
-    image: projectTrybewarts,
+    image: shopping,
   },
   {
     title: "StarWars filters",
     link: "https://hugodesousa.github.io/starwars-planets-search/",
     description: "norem ipsum eget nostra arcu pretium senectus vel donec sed consequat luctus, arcu velit ut ante ultricies gravida adipiscing dictum donec fames erat ",
-    image: projectTrybewarts,
+    image: stars,
   },
 ]
 
