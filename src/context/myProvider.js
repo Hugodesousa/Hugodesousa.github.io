@@ -3,10 +3,14 @@ import myContext from './myContext';
 
 function MyProvider({children}) {
 const [componentUsed, setComponentUsed] = useState('sobre');
+    const [selectedProject, setSelectedProject] = useState(0)
 
 const initial = {
     componentUsed,
     setComponentUsed,
+    selectedProject,
+    setSelectedProject,
+
 }
 
 return (

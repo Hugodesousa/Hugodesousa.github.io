@@ -1,8 +1,11 @@
 .contFix {
   display: flex;
   justify-content: center;
+  
 }
 
-.Container {
+@media screen and ( max-width : 780px ) {
+  .row {
     padding: 0;
-} 
+  }
+}

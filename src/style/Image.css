@@ -1,19 +1,22 @@
 .imageContainer {
-/* position: absolute;
-width: 667px;
-height: 768px; */
-
-/* background: url(20210528_184351.jpg); */
-display: flex;
-flex-direction: column;
-align-items: center;
-margin-top: 10%;
-
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rem;
 }
 .photo {
-/* position: relative; */
-width: 200px;
-border-radius: 50%;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+}
 
-
+@media screen and ( max-width : 780px ) {
+  .imageContainer {
+    margin: 0;
+    padding: 0;
+  }
+  .photo {
+    height: 180px;
+    width: 180px;
+}
 }

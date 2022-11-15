@@ -1,34 +1,58 @@
 import React, { useContext } from 'react'
 import { Button } from 'reactstrap';
-import projectSolarSystem from '../images/projectSolarSystem.webm'
+// import projectSolarSystem from '../images/projectSolarSystem.webm'
 import myContext from '../context/myContext';
 import '../style/Projects.css'
-
-
+import myProjects from '../data';
+import Video from './Video';
 
 export default function Projects() {
   const {
-    componentUsed,
+    selectedProject,
+    setSelectedProject,
   } = useContext(myContext)
+
+  const controlerProjectSelected = (parn) => {
+    if (parn === 'mais') {
+      selectedProject < myProjects.length - 1 
+        ? setSelectedProject(selectedProject + 1) 
+        : setSelectedProject(0) ;
+    }
+    selectedProject > 0 
+      ? setSelectedProject(selectedProject - 1) 
+      : setSelectedProject(myProjects.length - 1) ;
+  };
+
   return (
     <div className='containerProjects'>
       <h3>
         Projects
       </h3>
       <div className='content'>
-        <video id="videoBanner" className="content" loop autoPlay muted >
-          <source src={projectSolarSystem}></source>
-        </video>
+        <Video image={myProjects[selectedProject].image}/>
       </div>
       <div>
-        <Button outline color="secondary"> {'<'} </Button>
-        <Button outline color="secondary"> {'>'} </Button>
+        <Button
+        className='buttonNext' 
+        outline color="secondary"
+          onClick={() => {
+            controlerProjectSelected('menos')
+          }}
+        > {'<'} </Button>
+        <Button 
+        className='buttonNext' 
+        outline color="secondary"
+        onClick={() => {
+          controlerProjectSelected('mais')
+        }}
+        > {'>'} 
+        </Button>
       </div>
-      <div>
+      <div className="discriptionContainer">
         <strong>
-          <a href='https://hugodesousa.github.io/Project-Solar-System/' target='_blank' rel="noreferrer">Projeto Solar System</a>
+          <a href={myProjects[selectedProject].link} target='_blank' rel="noreferrer">{myProjects[selectedProject].title}</a>
         </strong>
-        <p>Lorem ipsum eget nostra arcu pretium senectus vel donec sed consequat luctus, arcu velit ut ante ultricies gravida adipiscing dictum donec fames erat quisque, aptent nulla ultricies cubilia pellentesque non sollicitudin malesuada tincidunt venenatis. iaculis</p>
+        <p>{myProjects[selectedProject].description}</p>
       </div>
     </div>
   )
