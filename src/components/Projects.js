@@ -31,7 +31,7 @@ export default function Projects() {
       <div className='content'>
         <Video image={myProjects[selectedProject].image}/>
       </div>
-      <div>
+      <div className='nextContainer'>
         <Button
         className='buttonNext' 
         outline color="secondary"
@@ -39,6 +39,9 @@ export default function Projects() {
             controlerProjectSelected('menos')
           }}
         > {'<'} </Button>
+
+          <p>{`${selectedProject + 1} de ${myProjects.length}`}</p>
+
         <Button 
         className='buttonNext' 
         outline color="secondary"
