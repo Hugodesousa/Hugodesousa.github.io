@@ -8,7 +8,7 @@ import shopping from './images/shoppingCart.gif';
 import stars from './images/starwars.png'
 
 
-const myProjects = [
+const myProjectsFront = [
   {
     title: "Trybe-tunes",
     link: "https://hugodesousa.github.io/trybe-tunes/",
@@ -59,4 +59,4 @@ const myProjects = [
   },
 ]
 
-export default myProjects;
+export default myProjectsFront;

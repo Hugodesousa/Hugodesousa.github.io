@@ -1,10 +1,11 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { Button } from 'reactstrap';
-// import projectSolarSystem from '../images/projectSolarSystem.webm'
 import myContext from '../context/myContext';
 import '../style/Projects.css'
-import myProjects from '../data';
+import myProjectsFront from '../dataFront';
+import myProjectsBack from '../dataBack';
 import Video from './Video';
+// let corrent = myProjectsBack;
 
 export default function Projects() {
   const {
@@ -12,51 +13,147 @@ export default function Projects() {
     setSelectedProject,
   } = useContext(myContext)
 
+  const [corrent, setCurrent] = useState(myProjectsBack);
+
   const controlerProjectSelected = (parn) => {
     if (parn === 'mais') {
-      return selectedProject < myProjects.length - 1 
-        ? setSelectedProject(selectedProject + 1) 
-        : setSelectedProject(0) ;
+      return selectedProject < corrent.length - 1
+        ? setSelectedProject(selectedProject + 1)
+        : setSelectedProject(0);
     }
-    return selectedProject > 0 
-      ? setSelectedProject(selectedProject - 1) 
-      : setSelectedProject(myProjects.length - 1) ;
+    return selectedProject > 0
+      ? setSelectedProject(selectedProject - 1)
+      : setSelectedProject(corrent.length - 1);
   };
 
   return (
     <div className='containerProjects'>
-      <h3>
-        Projects
-      </h3>
+      <div>
+        <h2 onClick={async() => {
+          setCurrent(myProjectsBack)
+          await setSelectedProject(0)
+          }}>Back-end</h2>
+        <h2 onClick={async() => {
+          setCurrent(myProjectsFront)
+          await setSelectedProject(0)
+          }}>Front-end</h2>
+      </div>
       <div className='content'>
-        <Video image={myProjects[selectedProject].image}/>
+        <Video image={corrent[selectedProject].image} />
       </div>
       <div className='nextContainer'>
         <Button
-        className='buttonNext' 
-        outline color="secondary"
+          className='buttonNext'
+          outline color="secondary"
           onClick={() => {
             controlerProjectSelected('menos')
           }}
         > {'<'} </Button>
-
-          <p>{`${selectedProject + 1} de ${myProjects.length}`}</p>
-
-        <Button 
-        className='buttonNext' 
-        outline color="secondary"
-        onClick={() => {
-          controlerProjectSelected('mais')
-        }}
-        > {'>'} 
+        <p>{`${selectedProject + 1} de ${corrent.length}`}</p>
+        <Button
+          className='buttonNext'
+          outline color="secondary"
+          onClick={() => {
+            controlerProjectSelected('mais')
+          }}
+        > {'>'}
         </Button>
       </div>
       <div className="discriptionContainer">
         <strong>
-          <a href={myProjects[selectedProject].link} target='_blank' rel="noreferrer">{myProjects[selectedProject].title}</a>
+          <a href={corrent[selectedProject].link} target='_blank' rel="noreferrer">{corrent[selectedProject].title}</a>
         </strong>
-        <p>{myProjects[selectedProject].description}</p>
+        <p>{corrent[selectedProject].description}</p>
       </div>
     </div>
   )
 }
+
+// import React, { useContext,useEffect, useState } from 'react'
+// import { Button } from 'reactstrap';
+// // import projectSolarSystem from '../images/projectSolarSystem.webm'
+// import myContext from '../context/myContext';
+// import '../style/Projects.css'
+// import myProjectsFrontFront from './ProjectsFront'
+// import myProjectsFrontBack from './ProjectsBack'
+// // import myProjectsFront from '../data';
+// import Video from './Video';
+
+// export default function Projects() {
+//   const {
+//     selectedProject,
+//     setSelectedProject,
+//   } = useContext(myContext)
+
+//   const {
+//     selectedGroupProducts,
+//     setSelectedGroupProducts,
+//   } = useContext(myContext);
+//   const [corrent, setCurrent] = useState([]);
+
+//   let hendleProjects = myProjectsFrontFront;
+//   useEffect(() => {
+//     if (selectedGroupProducts === 'back') {
+//       setCurrent(myProjectsFrontBack)
+//     }
+//     if (selectedGroupProducts === 'front') {
+//       setCurrent(myProjectsFrontFront)
+//     }
+//   }, []) 
+//   const controlerProjectSelected = (parn) => {
+//     if (parn === 'mais') {
+//       return selectedProject < corrent.length - 1 
+//         ? setSelectedProject(selectedProject + 1) 
+//         : setSelectedProject(0) ;
+//     }
+//     return selectedProject > 0 
+//       ? setSelectedProject(selectedProject - 1) 
+//       : setSelectedProject(corrent.length - 1) ;
+//   };
+
+//   return (
+//     <div className='containerProjects'>
+//       <div>
+//         <h2 onClick={() => setSelectedGroupProducts('back')}>
+//           Back-end
+//         </h2>
+//         <h2 onClick={() => setSelectedGroupProducts('front')}> 
+//           Front-end
+//         </h2>
+//       </div>
+//       {/* {selectedGroupProducts === 'back' 
+//       ? <ProjectsFront />
+//       : <ProjectsFront />} */}
+
+//       <div className='content'>
+//         <Video image={myProjectsFrontFront[selectedProject].image}/>
+//       </div>
+//       <div className='nextContainer'>
+//         <Button
+//         className='buttonNext' 
+//         outline color="secondary"
+//           onClick={() => {
+//             controlerProjectSelected('menos')
+//           }}
+//         > {'<'} </Button>
+
+//           <p>{`${selectedProject + 1} de ${hendleProjects.length}`}</p>
+
+//         <Button 
+//         className='buttonNext' 
+//         outline color="secondary"
+//         onClick={() => {
+//           controlerProjectSelected('mais')
+//         }}
+//         > {'>'} 
+//         </Button>
+//       </div>
+//       <div className="discriptionContainer">
+//         <strong>
+//           <a href={corrent[selectedProject].link} target='_blank' rel="noreferrer">{corrent[selectedProject].title}</a>
+//         </strong>
+//         <p>{corrent[selectedProject].description}</p>
+//       </div>
+//     </div>
+//   )
+// }
