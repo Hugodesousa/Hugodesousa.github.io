@@ -1,0 +1,15 @@
+.contFix {
+  display: flex;
+  justify-content: center;
+  
+}
+
+span {
+  padding: 1.5rem
+}
+
+@media screen and ( max-width : 780px ) {
+  .row {
+    padding: 0;
+  }
+}

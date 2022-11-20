@@ -1,0 +1,16 @@
+.gContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  padding-top: 35px;
+}
+
+@media screen and ( max-width : 780px ) {
+
+  .gContainer  {
+    height: auto;
+  }
+
+}
+
