@@ -5,7 +5,7 @@ import '../style/Projects.css'
 import myProjectsFront from '../dataFront';
 import myProjectsBack from '../dataBack';
 import Video from './Video';
-// let corrent = myProjectsBack;
+import { NavLink } from 'reactstrap'
 
 export default function Projects() {
   const {
@@ -13,7 +13,7 @@ export default function Projects() {
     setSelectedProject,
   } = useContext(myContext)
 
-  const [corrent, setCurrent] = useState(myProjectsBack);
+  const [corrent, setCurrent] = useState(myProjectsFront);
 
   const controlerProjectSelected = (parn) => {
     if (parn === 'mais') {
@@ -28,11 +28,12 @@ export default function Projects() {
 
   return (
     <div className='containerProjects'>
-      <div>
+      <div className='containerSelectedProjects'>
         <h2 onClick={async() => {
           setCurrent(myProjectsBack)
           await setSelectedProject(0)
           }}>Back-end</h2>
+          <h2>|</h2>
         <h2 onClick={async() => {
           setCurrent(myProjectsFront)
           await setSelectedProject(0)
@@ -60,10 +61,15 @@ export default function Projects() {
         </Button>
       </div>
       <div className="discriptionContainer">
-        <strong>
+        <h4>
           <a href={corrent[selectedProject].link} target='_blank' rel="noreferrer">{corrent[selectedProject].title}</a>
-        </strong>
+        </h4>
         <p>{corrent[selectedProject].description}</p>
+        <NavLink className='repoLink'
+          href={corrent[selectedProject].repoLink}
+          target='_blank'>
+          <h5>Link do repositório</h5>
+        </NavLink>
       </div>
     </div>
   )

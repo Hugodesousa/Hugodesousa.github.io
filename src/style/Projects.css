@@ -21,8 +21,18 @@
 
 .buttonNext {
   border-radius: 50%;
-  margin: 10px 20px;
+  margin: 0px 20px;
 }
+
+.containerSelectedProjects {
+  display: flex;
+}
+
+.containerSelectedProjects h2 {
+  padding: 0.3rem 1rem;
+  color: #0b6efd;
+}
+
 
 /* .btn {
   border-radius: 50%;

@@ -1,11 +1,19 @@
 import React from 'react'
+import tagsTecData from '../tagsTecData'
+import '../style/Tec.css'
 
 export default function Tec() {
+
   return (
-    <div>
-      <h2>
-        Tecnologias
-      </h2>
+    <div className='tagsContainer'>
+      {tagsTecData.map((tag) => {
+       return <img 
+        key={tag.tagName}
+        src={tag.link} 
+        alt={tag.tagName} 
+        className='tag'
+         />
+      })}
     </div>
   )
 }

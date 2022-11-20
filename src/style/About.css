@@ -5,6 +5,13 @@
   min-width: 500px;
 }
 
+.titleAbout {
+  margin-bottom: 3rem;
+}
+
+p {
+  font-size: large;
+}
 @media screen and ( max-width : 780px ) {
 
   .AboutContainer {

@@ -17,11 +17,14 @@ export default function Home() {
           </Col>
           <Col>
             <Row>
-            <GenericContainer />
-              <Col>
-                <Contacts />
-              </Col>
+              <GenericContainer />
             </Row>
+            <Row>
+                 <span></span>
+            </Row>
+            <Col>
+              <Contacts />
+            </Col>
           </Col>
         </Row>
       </Container>
