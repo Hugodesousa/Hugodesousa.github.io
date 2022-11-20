@@ -1,0 +1,21 @@
+.AboutContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-width: 500px;
+}
+
+.titleAbout {
+  margin-bottom: 3rem;
+}
+
+p {
+  font-size: large;
+}
+@media screen and ( max-width : 780px ) {
+
+  .AboutContainer {
+    min-width: 300px;
+  }
+
+}
