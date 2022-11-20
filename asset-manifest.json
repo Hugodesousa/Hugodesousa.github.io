@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1512dcf0.css",
+    "main.js": "/static/js/main.bf2da2ad.js",
+    "static/js/787.be55e6d0.chunk.js": "/static/js/787.be55e6d0.chunk.js",
+    "static/media/solarsystem.gif": "/static/media/solarsystem.b8b98b54168c810ef65f.gif",
+    "static/media/shoppingCart.gif": "/static/media/shoppingCart.e41ccfd178ec91029cdb.gif",
+    "static/media/starwars.png": "/static/media/starwars.084ec0b03de8cf4afdf8.png",
+    "static/media/trybewarts.png": "/static/media/trybewarts.e5929679ab4fdcbfa9de.png",
+    "static/media/tunes.gif": "/static/media/tunes.d72a12eb7e5f13b42477.gif",
+    "static/media/trivia.gif": "/static/media/trivia.6f5d0ca22f543f397c77.gif",
+    "static/media/phomain.jpg": "/static/media/phomain.f0d4c5f2fe48707032bf.jpg",
+    "static/media/wallet.gif": "/static/media/wallet.e0e3d77a6d9dec0daf45.gif",
+    "static/media/pixel-art.gif": "/static/media/pixel-art.945d72ba78d7adc75eed.gif",
+    "index.html": "/index.html",
+    "main.1512dcf0.css.map": "/static/css/main.1512dcf0.css.map",
+    "main.bf2da2ad.js.map": "/static/js/main.bf2da2ad.js.map",
+    "787.be55e6d0.chunk.js.map": "/static/js/787.be55e6d0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1512dcf0.css",
+    "static/js/main.bf2da2ad.js"
+  ]
+}
