@@ -13,7 +13,7 @@ export default function Projects() {
     setSelectedProject,
   } = useContext(myContext)
 
-  const [corrent, setCurrent] = useState(myProjectsFront);
+  const [corrent, setCurrent] = useState(myProjectsBack);
 
   const controlerProjectSelected = (parn) => {
     if (parn === 'mais') {

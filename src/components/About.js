@@ -8,7 +8,7 @@ export default function About() {
       Sobre...
       </h2>
       <p>
-        Sou estudante de Desenvolvimento Web na Trybe, tenho 5 anos de experiencia como design gráfico em gráfica rápida, onde me desenvolvi não só nas tecnologias necessárias (photoshop, corelDRAW, indesign, operação de impressoras de grande porte) mas também habilidades para lidar com pessoas e empresas parceiras. Sempre fui apaixonado por tecnologia e inovação, como programador tenho agora a oportunidade de entrar em um mercado onde poderei estar mais próximo dessa paixão.
+        Sou desenvolvedor web full-stack apaixonado por tecnologia e inovação, sempre busquei incluir a tecnologia ao máximo na minha rotina desde de o simples uso de vários apps e sistemas aos seus limites até escolhas profissionais, minhas primeiras experiências profissionais como técnico de informática refletem bem isso. Minha última experiência foi como arte finalista em uma gráfica, onde me desenvolvi muito nas relações interpessoais e também foi onde meu interesse por programação começou a medida que eu queria buscar soluções cada vez mais personalizadas para os desafios do cotidiano.
       </p>
     </div>
   )
