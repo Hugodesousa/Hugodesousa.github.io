@@ -1,0 +1,23 @@
+.footer {
+  align-items: center;
+  background-color: white;
+  border-radius: 35px;
+  box-shadow: 2px 2px 2px 2px rgba(0.1, 0.1, 0.1, 0.3);
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  /* position:;
+  bottom: 0; */
+}
+
+
+
+.footerItem {
+  padding: 10px 20px;
+}
+
+@media screen and ( max-width : 780px ) {
+
+  .footerItem {
+    padding: 10px 8px;
+  }
+}

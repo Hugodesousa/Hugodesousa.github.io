@@ -4,12 +4,24 @@
   flex-direction: column;
   height: 70vh;
   padding-top: 35px;
+  position: relative;
+  margin-bottom: 5rem;
+
+}
+
+@media screen and ( max-width : 1024px ) {
+
+  .gContainer  {
+    margin-bottom: 17rem;
+  }
+
 }
 
 @media screen and ( max-width : 780px ) {
 
   .gContainer  {
     height: auto;
+    margin-bottom: 5rem;
   }
 
 }
