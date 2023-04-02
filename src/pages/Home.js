@@ -22,9 +22,11 @@ export default function Home() {
             <Row>
                  <span></span>
             </Row>
-            <Col>
-              <Contacts />
-            </Col>
+            <div className="contantsCont">
+              <Row>
+                <Contacts />
+              </Row>
+            </div>
           </Col>
         </Row>
       </Container>
