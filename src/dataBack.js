@@ -26,7 +26,7 @@ const myProjectsBack = [
     title: "Store Manager",
     link: "https://github.com/Hugodesousa/store-manager",
     description: "Este projeto consiste no desenvolvimento de uma API para gerenciamento de vendas utilizando a arquitetura MSC (model-service-controller) e banco de dados MySQL. A API segue os princípios do REST e permite criar, visualizar, deletar e atualizar produtos e vendas. O projeto utiliza TDD para o desenvolvimento das funcionalidades.",
-    image: 'https://miro.medium.com/v2/resize:fit:829/1*eOMPsvxRWrbBFxdg590KKA.jpeg',
+    image: 'https://www.restapiexample.com/wp-content/uploads/2017/09/nodejs-mysql-express.png',
     repoLink: "https://github.com/Hugodesousa/store-manager"
   },
 ]
