@@ -33,6 +33,9 @@
   color: #0b6efd;
 }
 
+.projectsGroup {
+   cursor: pointer;
+}
 
 /* .btn {
   border-radius: 50%;

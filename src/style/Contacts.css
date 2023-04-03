@@ -13,6 +13,7 @@
 
 .footerItem {
   padding: 10px 20px;
+  cursor: pointer;
 }
 
 @media screen and ( max-width : 780px ) {

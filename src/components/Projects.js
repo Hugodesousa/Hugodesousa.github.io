@@ -26,18 +26,27 @@ export default function Projects() {
       : setSelectedProject(corrent.length - 1);
   };
 
+  const switchProjects = async (groupProjects) => {
+    setCurrent(groupProjects)
+    await setSelectedProject(0)
+  };
+
   return (
     <div className='containerProjects'>
       <div className='containerSelectedProjects'>
-        <h2 onClick={async() => {
-          setCurrent(myProjectsBack)
-          await setSelectedProject(0)
-          }}>Back-end</h2>
-          <h2>|</h2>
-        <h2 onClick={async() => {
-          setCurrent(myProjectsFront)
-          await setSelectedProject(0)
-          }}>Front-end</h2>
+        <h2 
+          onClick={async () => await switchProjects(myProjectsBack)}
+          className='projectsGroup'
+        >
+          Back-end
+        </h2>
+        <h2>|</h2>
+        <h2 
+          onClick={async () => await switchProjects(myProjectsFront)}
+          className='projectsGroup'
+        >
+          Front-end
+        </h2>
       </div>
       <div className='content'>
         <Video image={corrent[selectedProject].image} />
@@ -49,7 +58,8 @@ export default function Projects() {
           onClick={() => {
             controlerProjectSelected('menos')
           }}
-        > {'<'} </Button>
+        > {'<'} 
+        </Button>
         <p>{`${selectedProject + 1} de ${corrent.length}`}</p>
         <Button
           className='buttonNext'
