@@ -4,7 +4,8 @@ import myContext from './myContext';
 function MyProvider({children}) {
 const [componentUsed, setComponentUsed] = useState('sobre');
 const [selectedProject, setSelectedProject] = useState(0);
-    const [selectedGroupProducts, setSelectedGroupProducts] = useState('back');
+const [selectedGroupProducts, setSelectedGroupProducts] = useState('back');
+    const [modeColor, setModeColor] = useState('white')
 
 const initial = {
     componentUsed,
@@ -13,6 +14,8 @@ const initial = {
     setSelectedProject,
     selectedGroupProducts,
     setSelectedGroupProducts,
+    modeColor,
+    setModeColor,
 }
 
 return (

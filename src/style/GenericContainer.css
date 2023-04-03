@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   height: 70vh;
-  padding-top: 35px;
   position: relative;
   margin-bottom: 5rem;
 
@@ -21,7 +20,8 @@
 
   .gContainer  {
     height: auto;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
   }
 
 }
