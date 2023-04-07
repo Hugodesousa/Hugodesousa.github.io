@@ -17,14 +17,14 @@ const myProjectsBack = [
   },
   {
     title: "Blog API",
-    link: "https://github.com/Hugodesousa",
+    link: "https://github.com/Hugodesousa/blog-api",
     description: "Este projeto consiste no desenvolvimento de uma API e um banco de dados para a produção de conteúdo para um blog. A aplicação foi desenvolvida em Node.js usando o pacote Sequelize para fazer um CRUD de posts. Além disso, a API segue os princípios do REST e trabalha a relação entre usuário e post, além de utilizar categorias para os posts.",
     image: 'https://miro.medium.com/v2/resize:fit:829/1*eOMPsvxRWrbBFxdg590KKA.jpeg',
     repoLink: "https://github.com/Hugodesousa"
   },
   {
     title: "Store Manager",
-    link: "https://github.com/Hugodesousa/store-manager",
+    link: "https://github.com/Hugodesousa/blog-api",
     description: "Este projeto consiste no desenvolvimento de uma API para gerenciamento de vendas utilizando a arquitetura MSC (model-service-controller) e banco de dados MySQL. A API segue os princípios do REST e permite criar, visualizar, deletar e atualizar produtos e vendas. O projeto utiliza TDD para o desenvolvimento das funcionalidades.",
     image: 'https://www.restapiexample.com/wp-content/uploads/2017/09/nodejs-mysql-express.png',
     repoLink: "https://github.com/Hugodesousa/store-manager"

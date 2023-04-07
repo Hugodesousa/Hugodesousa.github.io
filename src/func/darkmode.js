@@ -17,7 +17,6 @@ export default function darkMode(mode) {
 
   const backgroud = document.getElementById('root');
   backgroud.style = `background-color: ${backgroudColor}; color: ${fontColor};`;
-
   
   const header = document.getElementsByClassName('header nav')[0];
   header.style = `background-color: ${contrast};`;

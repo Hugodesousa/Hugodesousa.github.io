@@ -13,8 +13,6 @@ span {
 } */
 
 .contantsCont {
-  /* background-color: red; */
-  /* margin-top: 100px; */
   padding: 5rem;
 }
 
@@ -23,8 +21,3 @@ span {
     padding: 0;
   }
 }
-/* @media screen and ( max-height : 1000px ) {
-  .row {
-    padding: 0;
-  }
-} */
