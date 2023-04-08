@@ -29,7 +29,7 @@
   },
   {
     tagName: 'Docker',
-    link: 'https://ml.globenewswire.com/Resource/Download/c83c4886-b215-4cf0-a973-64b8f65e7003',
+    link: 'https://www.docker.com/wp-content/uploads/2022/03/horizontal-logo-monochromatic-white.png',
   },
   {
     tagName: 'MySQL',

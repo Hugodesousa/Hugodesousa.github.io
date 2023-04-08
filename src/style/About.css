@@ -12,6 +12,7 @@
 p {
   font-size: large;
 }
+
 @media screen and ( max-width : 780px ) {
 
   .AboutContainer {
