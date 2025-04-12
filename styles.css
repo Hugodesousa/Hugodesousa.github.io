@@ -203,6 +203,9 @@ body.dark-theme {
 
 /* Ajuste responsivo para a sidebar */
 @media (max-width: 768px) {
+    /* #theme-toggle {
+       position: fixed; 
+    } */
     .sidebar {
         padding: 1rem;
         height: auto;
@@ -607,11 +610,14 @@ body.dark-theme {
 
 @media (max-width: 992px) {
     .swiper-button-next {
-        right: -3rem !important;
+        /* display: none;
+        background-color: red; */
+        /* right: -3rem !important; */
+        visibility: hidden;
     }
 
     .swiper-button-prev {
-        left: -3rem !important;
+        visibility: hidden;
     }
 }
 
