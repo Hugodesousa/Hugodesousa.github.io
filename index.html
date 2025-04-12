@@ -1,1 +1,397 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>Hugo de Sousa</title><script defer="defer" src="/static/js/main.717e27ed.js"></script><link href="/static/css/main.b7aa36ec.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body class="dark-theme">
+    <div class="container">
+        <!-- Seção Fixa Esquerda -->
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="static/media/3x4.png" alt="Avatar" class="avatar">
+                <h1>Hugo de Sousa Silva</h1>
+                <p class="title">Desenvolvedor Web Full-Stack</p>
+            </div>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>hugodesousa.16@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Brasília, Distrito Federal, Brasil</p>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/hugo-desousa-dev" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/hugodesousa" target="_blank"><i class="fab fa-github"></i></a>
+                <!-- <a href="https://hugodesousa.github.io/" target="_blank"><i class="fas fa-globe"></i></a> -->
+            </div>
+
+            <button id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </aside>
+
+        <!-- Conteúdo Principal -->
+        <main class="main-content">
+            <nav class="nav-tabs">
+                <a href="#about" class="active">Sobre</a>
+                <a href="#resume">Currículo</a>
+                <a href="#portfolio">Portfólio</a>
+                <!-- <a href="#contact">Contato</a> -->
+            </nav>
+
+            <!-- Seções de Conteúdo -->
+            <div class="content-sections">
+                <!-- Sobre -->
+                <section id="about" class="section active">
+                    <h2>Sobre Mim</h2>
+                    <p>Desenvolvedor Full-Stack apaixonado por tecnologia, comprometido em impulsionar a inovação e enfrentar desafios complexos por meio da programação. Minha jornada começou como técnico de informática, mas minha paixão pela programação cresceu rapidamente, levando-me a buscar oportunidades desafiadoras.</p>
+                    
+                    <p>Atualmente, trabalho no desenvolvimento de módulos Node.js para integrações em sistemas ASP Classic e SQL Server, realizando manutenção, modernização e otimização de sistemas legados. Este trabalho é um desafio empolgante que tem contribuído significativamente para o meu crescimento profissional.</p>
+                    
+                    <h2>O Que Faço</h2>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <i class="fas fa-code"></i>
+                            <h3>Desenvolvimento Full-Stack</h3>
+                            <p>Desenvolvimento web completo com TypeScript, Node.js, React, Express e SQL Server.</p>
+                        </div>
+                        <div class="service-card">
+                            <i class="fas fa-server"></i>
+                            <h3>Backend Development</h3>
+                            <p>Desenvolvimento e manutenção de sistemas com Node.js, ASP Classic e Microsoft SQL Server.</p>
+                        </div>
+                        <div class="service-card">
+                            <i class="fas fa-project-diagram"></i>
+                            <h3>Gestão Ágil</h3>
+                            <p>Experiência com metodologias ágeis e gestão de projetos.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Currículo -->
+                <section id="resume" class="section">
+                    <h2>Currículo</h2>
+                    <div class="resume-content">
+                        <div class="resume-section">
+                            <h3>Experiência Profissional</h3>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <h4>Analista de Sistema</h4>
+                                    <p class="company">Faculdade AIEC</p>
+                                    <p class="period">Fevereiro 2023 - Presente</p>
+                                    <ul>
+                                        <li>Desenvolvimento Full Stack com Microsoft SQL Server, ASP Classic e JavaScript</li>
+                                        <li>Desenvolvimento de módulos Node.js para integrações</li>
+                                        <li>Manutenção e modernização de sistemas legados</li>
+                                    </ul>
+                                </div>
+                                <div class="timeline-item">
+                                    <h4>Designer Gráfico</h4>
+                                    <p class="company">DCA Comercial de papel Eireli</p>
+                                    <p class="period">Fevereiro 2017 - Março 2022</p>
+                                    <ul>
+                                        <li>Arte-finalista usando Photoshop, CorelDRAW e InDesign</li>
+                                        <li>Operação de impressoras de grande porte</li>
+                                        <li>Desenvolvimento de habilidades interpessoais com clientes e parceiros</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resume-section">
+                            <h3>Educação</h3>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <h4>Tecnologia da Informação</h4>
+                                    <p class="company">Anhanguera Educacional</p>
+                                    <p class="period">2024 - 2026</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <h4>Desenvolvimento Web</h4>
+                                    <p class="company">Trybe</p>
+                                    <p class="period">2022 - 2023</p>
+                                </div>
+                                <!-- <div class="timeline-item">
+                                    <h4>Análise de Sistemas de Computação</h4>
+                                    <p class="company">Universidade Paulista</p>
+                                    <p class="period">2016</p>
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <div class="resume-section">
+                            <h3>Habilidades</h3>
+                            <div class="skills-grid">
+                                <div class="skill-item">
+                                    <span class="skill-name">TypeScript/JavaScript</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Node.js/Express</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">React</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">SQL Server</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">ASP Classic</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Metodologias Ágeis</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Portfólio -->
+                <section id="portfolio" class="section">
+                    <h2>Portfólio</h2>
+
+                    <h3 class="portfolio-category">Projetos Backend</h3>
+                    <div class="portfolio-section">
+                        <div class="swiper-button-prev backend-prev"></div>
+                        <div class="swiper portfolio-slider backend-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="project-card">
+                                        <img src="static/media/Budget-API.png" alt="Budget API">
+                                        <div class="project-info">
+                                            <h3>Budget API</h3>
+                                            <p>Esta API fornece uma solução para o gerenciamento de informações de produtos e usuários cadastrados em um mockend que representa um banco de dados fictício, a aplicação foi desenvolvida utilizando Express, Node.js e TypeScript utilizando conceitos de orientação a objetos e arquitetura MSC.</p>
+                                            <div class="project-links">
+                                                <!-- <a href="https://budget-api-production.up.railway.app/doc/" class="project-link" target="_blank">Ver API</a> -->
+                                                <a href="https://github.com/Hugodesousa/budget-API" class="project-link" target="_blank">Ver mais</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="project-card">
+                                        <img src="https://i.ytimg.com/vi/wVo-UMit5Ig/maxresdefault.jpg" alt="Talker Manager">
+                                        <div class="project-info">
+                                            <h3>Talker Manager</h3>
+                                            <p>Esta API fornece uma solução para o gerenciamento de informações de pessoas, desenvolvida com o framework Express e a linguagem de programação Node.js. Ela oferece uma variedade de recursos para realizar as operações CRUD.</p>
+                                            <div class="project-links">
+                                                <!-- <a href="https://talker-manager-production.up.railway.app/doc/" class="project-link" target="_blank">Ver API</a> -->
+                                                <a href="https://github.com/Hugodesousa/talker-manager" class="project-link" target="_blank">Ver mais</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="project-card">
+                                        <img src="https://miro.medium.com/v2/resize:fit:829/1*eOMPsvxRWrbBFxdg590KKA.jpeg" alt="Blog API">
+                                        <div class="project-info">
+                                            <h3>Blog API</h3>
+                                            <p>Este projeto consiste no desenvolvimento de uma API e um banco de dados para a produção de conteúdo para um blog. A aplicação foi desenvolvida em Node.js usando o pacote Sequelize para fazer um CRUD de posts.</p>
+                                            <div class="project-links">
+                                                <a href="https://github.com/Hugodesousa/blog-api" class="project-link" target="_blank">Ver mais</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="project-card">
+                                        <img src="https://www.restapiexample.com/wp-content/uploads/2017/09/nodejs-mysql-express.png" alt="Store Manager">
+                                        <div class="project-info">
+                                            <h3>Store Manager</h3>
+                                            <p>Este projeto consiste no desenvolvimento de uma API para gerenciamento de vendas utilizando a arquitetura MSC (model-service-controller) e banco de dados MySQL. A API segue os princípios do REST e permite criar, visualizar, deletar e atualizar produtos e vendas.</p>
+                                            <div class="project-links">
+                                                <a href="https://github.com/Hugodesousa/store-manager" class="project-link" target="_blank">Ver mais</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="swiper-button-next backend-next"></div>
+                    </div>
+
+                    <h3 class="portfolio-category">Projetos Frontend</h3>
+                    <div class="portfolio-section">
+                        <div class="swiper-button-prev frontend-prev"></div>
+                        <div class="swiper portfolio-slider frontend-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="project-card">
+                                        <img src="static/media/tunes.d72a12eb7e5f13b42477.gif" alt="Trybe-tunes">
+                                        <div class="project-info">
+                                            <h3>Trybe-tunes</h3>
+                                            <p>Neste projeto foi desenvolvida uma aplicação em React capaz de reproduzir músicas das mais variadas bandas e artistas, criar uma lista de músicas favoritas e editar o perfil da pessoa usuária logada</p>
+                                            <div class="project-links">
+                                                <a href="https://hugodesousa.github.io/trybe-tunes/" class="project-link" target="_blank">Ver Demo</a>
+                                                <a href="https://github.com/Hugodesousa/trybe-tunes" class="project-link" target="_blank">Ver mais</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="project-card">
+                                        <img src="static/media/wallet.e0e3d77a6d9dec0daf45.gif" alt="Wallet">
+                                        <div class="project-info">
+                                            <h3>Wallet</h3>
+                                            <p>Neste projeto foi desenvolvido uma carteira de controle de gastos com conversor de moedas, ao utilizar essa aplicação um usuário deverá ser capaz de fazer login, adicionar, remover e editar um gasto, visualizar uma tabela com seus gastos, visualizar o total de gastos convertidos para uma moeda de escolha.</p>
+                                            <div class="project-links">
+                                                <a href="https://hugodesousa.github.io/trybe-wallet/" class="project-link" target="_blank">Ver Demo</a>
+                                                <a href="https://github.com/Hugodesousa/trybe-wallet" class="project-link" target="_blank">Ver mais</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="project-card">
+                                        <img src="static/media/trivia.6f5d0ca22f543f397c77.gif" alt="Trivia">
+                                        <div class="project-info">
+                                            <h3>Trivia</h3>
+                                            <p>Neste projeto foi desenvolvido um jogo de perguntas e respostas baseado no jogo Trivia utilizando React e Redux, desenvolvendo em grupo suas funcionalidades de acordo com as demandas definidas em um quadro Kanban</p>
+                                            <div class="project-links">
+                                                <a href="https://hugodesousa.github.io/trivia-game/" class="project-link" target="_blank">Ver Demo</a>
+                                                <a href="https://github.com/Hugodesousa/trivia-game" class="project-link" target="_blank">Ver mais</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="project-card">
+                                        <img src="static/media/solarsystem.b8b98b54168c810ef65f.gif" alt="Solar System">
+                                        <div class="project-info">
+                                            <h3>Projeto Solar System</h3>
+                                            <p>Este projeto é uma página em web em React. com o objetivo de treinar o reaproveitamento de componentes e funções, a aplicação mostra uma lista dos planetas do sistema solar e uma outra de missões que foram realizadas até esses planetas.</p>
+                                            <div class="project-links">
+                                                <a href="https://hugodesousa.github.io/Project-Solar-System/" class="project-link" target="_blank">Ver Demo</a>
+                                                <a href="https://github.com/Hugodesousa/Project-Solar-System" class="project-link" target="_blank">Ver mais</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="swiper-slide">
+                                    <div class="project-card">
+                                        <img src="https://hugodesousa.github.io/Project-TrybeWarts-Formulario/" alt="Trybewarts">
+                                        <div class="project-info">
+                                            <h3>Trybewarts</h3>
+                                            <p>Neste projeto foi desenvolvido uma página com HTML, CSS e JavaScript, a pagina tem um formulario. de inscrição da Escola de Magia de Trybewarts, em que as pessoas estudantes poderão enviar seus feedbacks sobre ela.</p>
+                                            <div class="project-links">
+                                                <a href="https://hugodesousa.github.io/Project-TrybeWarts-Formulario/" class="project-link" target="_blank">Ver Demo</a>
+                                                <a href="https://github.com/Hugodesousa/Project-TrybeWarts-Formulario" class="project-link" target="_blank">Ver mais</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+
+                                <div class="swiper-slide">
+                                    <div class="project-card">
+                                        <img src="static/media/pixel-art.945d72ba78d7adc75eed.gif" alt="Arte com Pixels">
+                                        <div class="project-info">
+                                            <h3>Arte com pixel</h3>
+                                            <p>Este projeto trata-se uma página com HTML, CSS e JavaScript puros, foram implementadas funcionalidades para criar um board de pintura com pixel onde o usuário define o tamanho do board e tem 4 cores geradas aleatoriamente à disposição.</p>
+                                            <div class="project-links">
+                                                <a href="https://hugodesousa.github.io/Arte-com-Pixels/" class="project-link" target="_blank">Ver Demo</a>
+                                                <a href="https://github.com/Hugodesousa/Arte-com-Pixels" class="project-link" target="_blank">Ver mais</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="project-card">
+                                        <img src="static/media/shoppingCart.e41ccfd178ec91029cdb.gif" alt="Carrinho de Compras">
+                                        <div class="project-info">
+                                            <h3>Carrinho de compras</h3>
+                                            <p>Neste projeto foi desenvolvido uma página com HTML, CSS e JavaScript, uma versão simplificada de um e-commerce consumindo a API do mercado livre. O desenvolvimento foi orientado a testes utilizando o Jest.</p>
+                                            <div class="project-links">
+                                                <a href="https://hugodesousa.github.io/shopping-cart/" class="project-link" target="_blank">Ver Demo</a>
+                                                <a href="https://github.com/Hugodesousa/shopping-cart" class="project-link" target="_blank">Ver mais</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="project-card">
+                                        <img src="static/media/starwars.084ec0b03de8cf4afdf8.png" alt="StarWars Filters">
+                                        <div class="project-info">
+                                            <h3>StarWars filters</h3>
+                                            <p>Neste projeto foi desenvolvido uma página de filtros de planetas do universo de Star Wars usando Context API e Hooks para controlar os estados globais, a pessoa usuária será capaz de filtrar a lista de planetas por nome e ou uma característica definida na aplicação.</p>
+                                            <div class="project-links">
+                                                <a href="https://hugodesousa.github.io/starwars-planets-search/" class="project-link" target="_blank">Ver Demo</a>
+                                                <a href="https://github.com/Hugodesousa/starwars-planets-search" class="project-link" target="_blank">Ver mais</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="swiper-button-next frontend-next"></div>
+                    </div>
+                </section>
+
+                <!-- Contato -->
+                <!-- <section id="contact" class="section">
+                    <h2>Entre em Contato</h2>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Enviar Mensagem</button>
+                    </form>
+                </section> -->
+            </div>
+        </main>
+    </div>
+    <script>
+
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
